@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/ticket_price"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextEnterTicketPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textViewTicketPrice"
+        android:hint="@string/ticket_price_hint"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewDiscountedPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTicketPrice"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/discounted"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/discountedPercentageCalculated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEnterTicketPrice"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/textViewDiscountedPercentage"
+        android:textSize="20sp"
+        android:textColor="@color/lightBlue"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/textViewDiscountedPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDiscountedPercentage"
+        android:layout_marginTop="20dp"
+        android:text="@string/discounted_price"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/discountedPriceCalculated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discountedPercentageCalculated"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/textViewDiscountedPrice"
+        android:textSize="20sp"
+        android:textColor="@color/lightBlue"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/button5Percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDiscountedPrice"
+        android:layout_marginTop="20dp"
+        android:text="@string/_5_discount"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button10Percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button5Percent"
+        android:layout_marginTop="20dp"
+        android:text="@string/_10_discount"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button15Percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button10Percent"
+        android:layout_marginTop="20dp"
+        android:text="@string/_15_discount"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button20Percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button15Percent"
+        android:layout_marginTop="20dp"
+        android:text="@string/_20_discount"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button50Percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button20Percent"
+        android:layout_marginTop="20dp"
+        android:text="@string/_50_discount"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button50Percent"
+        android:layout_marginTop="20dp"
+        android:text="@string/_clear"
+        android:textSize="20sp"/>
+</RelativeLayout>
+

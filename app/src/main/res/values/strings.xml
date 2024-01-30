@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">In Class 02 - Discount Calculator</string>
+    <string name="ticket_price">Ticket Price:</string>
+    <string name="ticket_price_hint">Enter Ticket Price</string>
+    <string name="discounted">Discounted  %:</string>
+    <string name="discounted_price">Discounted Price:</string>
+    <string name="_5_discount">5% Discount</string>
+    <string name="_10_discount">10% Discount</string>
+    <string name="_15_discount">15% Discount</string>
+    <string name="_20_discount">20% Discount</string>
+    <string name="_50_discount">50% Discount</string>
+    <string name="_clear">Clear</string>
+</resources>
